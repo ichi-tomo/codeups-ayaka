@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.sp-nav {
+  display: none;
+  position: absolute;
+  top: rem(80);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: $main-bg-color;
+}
+
+.sp-nav.is-active {
+  display: block;
+}
+
+.sp-nav__items {
+  margin-right: auto;
+  margin-left: auto;
+  padding: rem(24) rem(37) rem(100);
+  display: flex;
+}
+
+.sp-nav__item + .sp-nav__item {
+  padding-left: rem(29);
+}
+
+.sp-nav__item:first-child {
+  margin-left: auto;
+}
+.sp-nav__item:last-child {
+  margin-right: auto;
+}
+
+.sp-nav__parent,
+.sp-nav__child {
+  font-size: rem(16);
+  line-height: 1.125;
+  color: $white;
+}
+
+.sp-nav__parent {
+  font-weight: $bold;
+  position: relative;
+}
+
+.sp-nav__parent::before {
+  content: "";
+  display: block;
+  width: rem(18);
+  height: rem(18);
+  position: absolute;
+  // top: 50%;と、transform: translateY(-50%) で上下中央に配置
+  top: rem(9);
+  left: rem(-22);
+  transform: translateY(-50%);
+  background: url(../images/common/sp-nav_icon.svg) no-repeat center center / contain;
+}
+.sp-nav__parent:not(:first-child) {
+  margin-top: rem(40);
+}
+
+.sp-nav__child {
+  margin-top: rem(24);
+  font-weight: $regular;
+}

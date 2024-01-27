@@ -4,17 +4,28 @@
   width: 100%;
   height: rem(80);
   background: rgba($black, 0.68);
+  z-index: 1000;
+  position: fixed;
   @include mq(md) {
     height: rem(90);
   }
 }
+
 
 .header__inner {
   height: inherit;    // 親要素の高さを継承
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 rem(15);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: calc(rem(1360) + ($padding-pc * 2));
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
 }
 
 .header__logoLink {
@@ -28,5 +39,18 @@
   @include mq(md) {
     width: rem(133);
     height: rem(50);
+  }
+}
+.header__drawer {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.header__pc-nav {
+  height: inherit;
+  display: none;
+  @include mq(md) {
+    display: block;
   }
 }
