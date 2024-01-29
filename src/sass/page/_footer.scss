@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .footer {
+  margin-top: rem(800);
   background-color: $main-bg-color;
   padding-top: rem(48);
   padding-bottom: rem(56);
@@ -9,66 +10,73 @@
   }
 }
 
-.footer__head {
+.footer__inner {
   @include mq(md) {
-    display: flex;
+    max-width: calc(rem(1008) + rem(25) * 2);
+    width: 100%;
+  }
+}
+
+.footer__head {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(40);
   }
 }
 
 .footer__logo {
   width: rem(120);
-  height: auto;
   @include mq(md) {
-    max-width: rem(200);
-    width: 100%;
-    height: auto;
+    width: rem(200);
   }
 }
 
-.footer__logoLink {
+.footer__logo img {
   width: 100%;
-  height: 100%;
 }
 
 .footer__sns {
   display: flex;
-  margin-top: rem(16);
+  gap: rem(16);
   @include mq(md) {
     margin-top: rem(38);
-    margin-left: rem(40);
   }
-}
-
-.footer__sns-icon + .footer__sns-icon {
-  margin-left: rem(20);
 }
 
 .footer__sns-icon {
-  width: rem(19.5);
-  height: auto;
+  width: rem(24);
+  padding: rem(2.25);
   @include mq(md) {
-    max-width: rem(32);
-    width: 100%;
-    height: auto;
-  }
+    width: rem(32);
+      padding: rem(3);
+    }
 }
+
 .footer__sns-icon img {
   width: 100%;
-  height: 100%;
 }
 
 .footer__nav {
   margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
 }
 
 .footer__copyright {
   margin-top: rem(40);
   text-align: center;
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 
 .footer__copyright small {
   font-size: rem(12);
   font-family: $english-main-font-family;
-  line-height: 1;
+  line-height: 1.5;
   color: $white;
 }

@@ -1,7 +1,12 @@
 @use "global" as *;
 
 .nav {
+  display: inline-block;
   background: $main-bg-color;
+}
+
+.nav__inner {
+  padding-left: rem(22);
 }
 
 .nav.is-active {
@@ -10,23 +15,33 @@
 
 .nav__items {
   display: flex;
+  gap: rem(38);
+  @include mq(md) {
+    gap: rem(142);
+  }
 }
 
-.nav__item + .nav__item {
-  padding-left: rem(29);
+.nav__item--sp {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(142);
+  }
 }
 
-.nav__item:first-child {
-  margin-left: auto;
+.nav__item--pc {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
 }
-.nav__item:last-child {
-  margin-right: auto;
-}
+
 
 .nav__parent,
 .nav__child {
   font-size: rem(16);
-  line-height: 1.125;
+  line-height: calc(rem(18) / rem(16));
   color: $white;
 }
 
@@ -46,9 +61,6 @@
   left: rem(-22);
   transform: translateY(-50%);
   background: url(../images/common/nav_icon.svg) no-repeat center center / contain;
-}
-.nav__parent:not(:first-child) {
-  margin-top: rem(40);
 }
 
 .nav__child {
