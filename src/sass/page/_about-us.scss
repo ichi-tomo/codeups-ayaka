@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.about-us {
+
+}
+
+.about-us__inner {
+  @include mq(md) {
+    position: relative;
+  }
+}
+
+.about-us__content {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.about-us__decoration {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    bottom: -5.6875rem;
+    right: calc(50% - min(48.4vw, 39.875rem));
+    width: 12.125rem;
+  }
+}
+
+.about-us__decoration img {
+  @include mq(md) {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+

@@ -5,8 +5,8 @@
   height: rem(80);
   background: rgba($black, 0.68);
   z-index: 1000;
-  position: fixed;
-  top: 0;
+  // position: fixed;  // 最後に戻す
+  // top: 0;           // 最後に戻す
   @include mq(md) {
     height: rem(90);
   }

@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .nav {
-  display: inline-block;
   background: $main-bg-color;
+  z-index: 1000;
 }
 
 .nav__inner {

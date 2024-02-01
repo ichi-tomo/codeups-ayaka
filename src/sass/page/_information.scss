@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.information {
+  background-color: $sub-bg-color;
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(76);
+  }
+}
+
+.information__inner {
+  width: 100%;
+  @include mq(md) {
+    max-width: calc(rem(1080) + $padding-pc * 2);
+  }
+}
+
+.information__items {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.information__item {
+
+}
+
+.information__btn {
+  margin-top: rem(40);
+}

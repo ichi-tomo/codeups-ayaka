@@ -1,5 +1,10 @@
 @use "global" as *;
 
+.btn {
+  padding-bottom: rem(4);
+  text-align: center;
+}
+
 .button {
   display: inline-flex;
   color: $white;
@@ -28,7 +33,7 @@
   position: absolute;
   width: rem(40);
   height: rem(6);
-  top: rem(16);
+  top: rem(17);
   right: rem(40);
   border-bottom: solid 1px;
   border-right: solid 1px;
