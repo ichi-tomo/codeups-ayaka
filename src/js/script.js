@@ -35,10 +35,34 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       },
       // Navigation arrows
       navigation: {
-        prevEl: ".campaign-swiper__prev"
-        nextEl: ".campaign-swiper__next",
+        prevEl: ".campaign-swiper__prev",
+        nextEl: ".campaign-swiper__next"
       }
     });
   });
-  
+
+
+  //画像のアニメーション
+  var box = $('.js-colorbox'),
+  speed = 700;
+  box.each(function(){
+    $(this).append('<div class="is-color"></div>')
+    var color = $(this).find($('.is-color')),
+    image = $(this).find('img');
+    var counter = 0;
+    image.css('opacity','0');
+    color.css('width','0%');
+    color.on('inview', function(){
+      if(counter == 0){
+        $(this).delay(200).animate({'width':'100%'},speed,function(){
+          image.css('opacity','1');
+          $(this).css({'left':'0' , 'right':'auto'});
+          $(this).animate({'width':'0%'},speed);
+          })
+          counter = 1;
+      }
+    });
+  });
+
+
 });

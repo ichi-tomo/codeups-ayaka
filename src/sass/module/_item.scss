@@ -12,7 +12,26 @@
 }
 
 .item__img {
+  text-align: center;
+  width: 100%;
+  max-width: rem(540);
+  position: relative;
+  // width: 80%;
+}
 
+.item__img .is-color{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: $main-bg-color;
+}
+
+.item__img img {
+  width: 100%;
+  display: block;
 }
 
 .item__body {
@@ -40,4 +59,8 @@
   font-style: normal;
   font-weight: $regular;
   line-height: 1.5;
+}
+
+.item__btn {
+  margin-top: rem(40);
 }

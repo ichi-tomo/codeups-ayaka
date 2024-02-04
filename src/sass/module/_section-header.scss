@@ -20,7 +20,11 @@ text-align: center;
 }
 
 .section-header__japaneseTitle {
+  margin-top: rem(4);
   color: $main-bg-color;
   font-size: rem(12);
   line-height: 1.5;
+  @include mq(md) {
+    margin-top: rem(8);
+  }
 }
