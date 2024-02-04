@@ -13,6 +13,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  // mv swiper
+  $(function(){
+    var swiper = new Swiper(".js-mv-swiper", {
+      loop: true,   // 無限ループさせる
+      speed: 4000,
+      effect: 'fade',
+      autoplay: {
+        delay: 1000,                  // 次のスライドに切り替わるまでのミリ秒
+        disableOnInteraction: false   // ユーザーが操作したときに自動再生を止める。falseがオススメ
+      }
+    });
+  });
+
+  // campaign swiper
   $(function(){
     var swiper = new Swiper(".js-campaign-swiper", {
       loop: true,   // クルクル回ってる

@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  transition: all 5s;
+  background-color: $main-bg-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loader.is-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader__title {
+  width: 100vw;
+  height: 100vh;
+  transition: all 5s;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader__title.is-active {
+  opacity: 1;
+  visibility: visible;
+}

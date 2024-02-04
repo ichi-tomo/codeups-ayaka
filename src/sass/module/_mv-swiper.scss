@@ -1,0 +1,18 @@
+// mvに依存しているswiper
+@use "global" as *;
+
+.mv-swiper {
+
+}
+
+.mv-swiper__img {
+  width: 100%;
+  height: inherit;
+}
+
+.mv-swiper__img img {
+  height: inherit;
+  min-height: inherit;
+  object-fit: cover;
+  width: 100%;
+}
