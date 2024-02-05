@@ -28,3 +28,16 @@ text-align: center;
     margin-top: rem(8);
   }
 }
+
+.section-header__englishTitle--white,
+.section-header__englishTitle--white span {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.section-header__japaneseTitle--white {
+  @include mq(md) {
+    color: $white;
+  }
+}

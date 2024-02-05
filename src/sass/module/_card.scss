@@ -2,9 +2,14 @@
 
 .card {
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: $white;
 }
 
 .card__inner {
+  padding-top: rem(16);
+  padding-right: rem(16);
+  padding-left: rem(16);
+  padding-bottom: rem(24);
 }
 
 .card__img {
@@ -28,13 +33,11 @@
 }
 
 .card__body {
-  padding-right: rem(16);
-  padding-left: rem(16);
-  padding-bottom: rem(24);
 }
 
 .card__tag {
-  margin-top: rem(16);
+  margin-top: rem(8);
+  margin-bottom: rem(4);    // タイトルに余白をつけないため仕方なし
   color: $main-bg-color;
   font-size: rem(12);
   line-height: calc(rem(22) / rem(12));
@@ -43,8 +46,16 @@
   padding: rem(4) rem(12);
 }
 
+.card__date {
+  display: inline-block;
+  margin-top: rem(24);
+  color: $black;
+  font-family: $english-main-font-family;
+  font-size: rem(12);
+  line-height: 1.5;
+}
+
 .card__title {
-  margin-top: rem(4);
   font-weight: $normal;
   line-height: calc(rem(24) / rem(16));
   padding-bottom: rem(8);
@@ -56,6 +67,17 @@
   font-size: rem(14);
   line-height: calc(rem(24) / rem(14));
   text-align: center;
+}
+
+.card__text {
+  margin-top: rem(16);
+  color: $black;
+  font-size: rem(16);
+  line-height: 1.5;
+  letter-spacing: rem(1);
+  @include mq(md) {
+    letter-spacing: rem(0.7);
+  }
 }
 
 .card__prices {
