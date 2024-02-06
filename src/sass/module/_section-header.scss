@@ -41,3 +41,23 @@ text-align: center;
     color: $white;
   }
 }
+
+.section-header__englishTitle--big {
+  font-size: rem(80);
+  line-height: 1.25;
+  @include mq(md) {
+    font-size: rem(80);
+    line-height: 1.25;
+  }
+}
+
+.section-header__japaneseTitle--big {
+  margin-top: rem(8);
+  font-size: rem(14);
+  line-height: 1.28571;
+  @include mq(md) {
+    margin-top: rem(8);
+    font-size: rem(14);
+    line-height: 1.28571;
+  }
+}

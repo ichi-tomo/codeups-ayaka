@@ -1,7 +1,36 @@
 @use "global" as *;
 
 .voice {
+  padding-top: rem(40);
+  padding-bottom: rem(80);
+  @include mq(md) {
+    padding-top: rem(140);
+    padding-bottom: rem(140);
+    position: relative;
+  }
+}
 
+.voice__decoration1 {
+  display: none;
+  @include mq(md) {
+    display: block;
+    transform: scale(-1, 1);
+    position: absolute;
+    top: rem(24);
+    left: calc(50% - min(48.4vw, 38.875rem));
+    width: rem(301);
+  }
+}
+
+.voice__decoration2 {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    bottom:  4.3125rem;
+    right: calc(50% - min(48.4vw, 33.875rem));
+    width: rem(71);
+  }
 }
 
 .voice__inner {
@@ -9,10 +38,21 @@
 }
 
 .voice__cards {
-
+  margin-top: rem(40);
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 
 .voice__card {
-  display: flex;
-  flex-direction: row-reverse;
+}
+
+.voice__btn {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }

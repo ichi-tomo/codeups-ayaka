@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.contact {
+  padding-top: rem(80);
+  padding-bottom: rem(100);
+  @include mq(md) {
+    padding-top: rem(140);
+    padding-bottom: rem(160);
+  }
+}
+
+.contact__boxes {
+  position: relative;
+}
+
+.contact__decoration1 {
+  display: block;
+  position: absolute;
+  top: -2.6875rem;
+  right: calc(50% - min(48.4vw, 41.875rem));
+  width: rem(109);
+  @include mq(md) {
+    width: rem(301);
+  }
+}
+

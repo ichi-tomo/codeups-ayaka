@@ -43,6 +43,7 @@
     height: rem(50);
   }
 }
+
 .header__drawer {
   @include mq(md) {
     display: none;

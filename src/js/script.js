@@ -62,7 +62,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   box.each(function(){
     $(this).append('<div class="is-color"></div>')
     var color = $(this).find($('.is-color')),
-    image = $(this).find('img');
+    image = $(this).find('img', 'source');
     var counter = 0;
     image.css('opacity','0');
     color.css('width','0%');

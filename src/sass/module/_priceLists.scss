@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.priceLists {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+}
+
+.priceList__menu {
+  color: $black;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: rem(4);
+  border-bottom: 1px solid $main-bg-color;
+}
+
+.priceList__wrapper {
+  margin-top: rem(8);
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceList__course,
+.priceList__price {
+  color: $black;
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 1.71429;
+}
+
+.priceList__course {
+  text-align: left;
+}
+
+.priceList__price {
+  text-align: right;
+}
