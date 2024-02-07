@@ -7,3 +7,23 @@
 - mv-swiper
 
 ## どこかに依存しているパーツ
+
+
+## sectionタイトル一覧
+- header
+- mv
+- campaign
+- about-us
+- information
+- blog
+- voice
+- price
+- contact
+- footer
+- pagetop
+
+## 確認事項
+- ファビコン
+- 
+- 
+- 

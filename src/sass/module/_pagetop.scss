@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.pagetop {
+  width: 12.8%;
+  aspect-ratio: 48 / 48;
+  max-width: rem(80);
+  border: 1px solid $main-bg-color;
+  background-color: $white;
+  border-radius: 50%;
+  position: fixed;
+  right: rem(15);
+  bottom: rem(15);
+  z-index: 3000;
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+.pagetop::after {
+  color: $main-bg-color;
+  content: "";
+  position: absolute;
+  width: 12.5%;
+  height: 58.3333%;
+  top: 25%;
+  left: 40%;
+  transform: translate(-25%, -40%);
+  border-top: solid 1px;
+  border-right: solid 1px;
+  transform: skew(0, -45deg,);
+}

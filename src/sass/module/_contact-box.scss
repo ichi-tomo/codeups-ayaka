@@ -79,6 +79,13 @@
   }
 }
 
+.contact-box__map iframe {
+  width: rem(295);
+  @include mq(md) {
+    width: rem(273);
+  }
+}
+
 .contact-box__btn {
   margin-top: rem(40);
 }

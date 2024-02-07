@@ -78,5 +78,46 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
+  // ページトップボタン
+$(function () {
+  const pageTop = $(".js-pagetop");
+  pageTop.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      pageTop.fadeIn();
+    } else {
+      pageTop.fadeOut();
+    }
+  });
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
+  });
+  // フッター手前でストップ
+  $(".js-pagetop").hide();
+  $(window).on("scroll", function () {
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    var footHeight = $("footer").innerHeight();
+    if (scrollHeight - scrollPosition <= footHeight) {
+  // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+      $(".js-pagetop").css({
+        position: "absolute",
+        bottom: footHeight + 18
+      });
+    } else {
+      $(".js-pagetop").css({
+        position: "fixed",
+        bottom: "35px"
+      });
+    }
+  });
+});
+
 
 });

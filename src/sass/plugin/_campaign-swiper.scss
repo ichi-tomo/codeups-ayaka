@@ -8,6 +8,12 @@
   }
 }
 
+.campaign-swiper__container {
+  @include mq(md) {
+    padding-bottom: rem(10);
+  }
+}
+
 .campaign-swiper__card {
   margin-top: rem(24);
 }

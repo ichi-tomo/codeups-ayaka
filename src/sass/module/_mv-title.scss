@@ -8,6 +8,7 @@
 .mv-title__wrapper {
 }
 
+
 .mv-title__mainTitle,
 .mv-title__subTitle {
   text-align: center;
@@ -29,4 +30,8 @@
 .mv-title__subTitle {
   font-family: $english-main-font-family;
   font-size: rem(20);
+}
+
+.mv-title--color {
+  color: $main-bg-color;
 }
