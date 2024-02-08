@@ -34,14 +34,18 @@
   }
 }
 
-.header__logoLink img {
+.header__logoLink {
   display: block;
   width: rem(102);
-  height: rem(38);
+  aspect-ratio: 102 / 38;
   @include mq(md) {
     width: rem(133);
-    height: rem(50);
   }
+}
+
+.header__logoLink img {
+  width: 100%;
+  height: 100%;
 }
 
 .header__drawer {

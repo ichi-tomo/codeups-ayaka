@@ -30,7 +30,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(function(){
     var swiper = new Swiper(".js-campaign-swiper", {
       loop: true,   // クルクル回ってる
-      slidesPerView: 1.26,    // 1画面にいくつ表示させるか
+      slidesPerView: 1.22,    // 1画面にいくつ表示させるか
       breakpoints: {
         768: {
           slidesPerView: 3.29,
@@ -43,10 +43,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       },
       spaceBetween: 24,
       speed: 2000,
-      autoplay: {
-        delay: 1000,
-        disableOnInteraction: false
-      },
+      // autoplay: {
+      //   delay: 1000,
+      //   disableOnInteraction: false
+      // },
       // Navigation arrows
       navigation: {
         prevEl: ".campaign-swiper__prev",

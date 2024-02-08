@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .blog {
-  padding-top: rem(80);
+  padding-top: rem(79);
   padding-bottom: rem(40);
   @include mq(md) {
     padding-top: rem(100);
@@ -31,10 +31,12 @@
 }
 
 .blog__cards {
-  margin-top: rem(24);
+  margin-top: rem(28);
+  margin-right: rem(6);
+  margin-left: rem(6);
   display: flex;
   flex-direction: column;
-  gap: rem(40);
+  gap: rem(39);
   @include mq(md) {
     margin-top: rem(80);
     flex-direction: row;

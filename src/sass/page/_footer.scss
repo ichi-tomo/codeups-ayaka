@@ -19,7 +19,7 @@
 .footer__head {
   display: flex;
   flex-direction: column;
-  gap: rem(16);
+  gap: rem(10);
   @include mq(md) {
     flex-direction: row;
     gap: rem(40);
@@ -66,7 +66,7 @@
 }
 
 .footer__copyright {
-  margin-top: rem(40);
+  margin-top: rem(33);
   text-align: center;
   @include mq(md) {
     margin-top: rem(80);

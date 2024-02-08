@@ -16,8 +16,8 @@
 .contact__decoration1 {
   display: block;
   position: absolute;
-  top: -2.6875rem;
-  right: calc(50% - min(48.4vw, 41.875rem));
+  top: -1.6875rem;
+  right: calc(50% - min(45.4vw, 41.875rem));
   width: rem(109);
   @include mq(md) {
     width: rem(301);

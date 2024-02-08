@@ -44,11 +44,15 @@ text-align: center;
 
 .section-header__englishTitle--big {
   font-size: rem(80);
-  line-height: 1.25;
+  line-height: 1;
   @include mq(md) {
     font-size: rem(80);
     line-height: 1.25;
   }
+}
+
+.section-header__japaneseTitle--contact {
+  margin-top: rem(-7);
 }
 
 .section-header__japaneseTitle--big {
@@ -56,8 +60,8 @@ text-align: center;
   font-size: rem(14);
   line-height: 1.28571;
   @include mq(md) {
-    margin-top: rem(8);
-    font-size: rem(14);
-    line-height: 1.28571;
+      margin-top: rem(8);
+  font-size: rem(14);
+  line-height: 1.28571;
   }
 }

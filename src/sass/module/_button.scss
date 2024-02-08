@@ -1,19 +1,20 @@
 @use "global" as *;
 
 .btn {
+  padding-right: rem(4);
   padding-bottom: rem(4);
   text-align: center;
 }
 
 .button {
-  display: inline-flex;
+  display: inline-block;
   color: $white;
   font-family: $english-main-font-family;
   font-size: rem(14);
   font-weight: $regular;
   background-color: $main-bg-color;
   line-height: 1;
-  padding: rem(16) rem(88) rem(16) rem(40);
+  padding: rem(20) rem(88) rem(20) rem(40);
   flex-shrink: 1;
   border: 1px solid $main-bg-color;
   position: relative;
@@ -59,8 +60,8 @@
   position: absolute;
   width: rem(40);
   height: rem(6);
-  top: rem(16);
-  right: rem(40);
+  top: rem(22);
+  right: rem(42);
   border-bottom: solid 1px;
   border-right: solid 1px;
   transform: skew(45deg);

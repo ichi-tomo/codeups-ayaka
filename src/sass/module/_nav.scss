@@ -15,7 +15,7 @@
 
 .nav__items {
   display: flex;
-  gap: rem(38);
+  gap: rem(40);
   @include mq(md) {
     gap: rem(142);
   }
@@ -66,4 +66,5 @@
 .nav__child {
   margin-top: rem(24);
   font-weight: $regular;
+  line-height: 1.125;
 }

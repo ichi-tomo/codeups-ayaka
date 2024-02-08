@@ -15,7 +15,11 @@
 }
 
 .campaign-swiper__card {
-  margin-top: rem(24);
+  margin-top: rem(28);
+  width: rem(280);
+  @include mq(md) {
+    width: rem(334);
+  }
 }
 
 .campaign-swiper__pagination {
