@@ -13,6 +13,7 @@
   z-index: 3000;
   @include mq(md) {
     width: 100%;
+    right: rem(20);
   }
 }
 
@@ -27,5 +28,5 @@
   transform: translate(-25%, -40%);
   border-top: solid 1px;
   border-right: solid 1px;
-  transform: skew(0, -45deg,);
+  transform: skew(0, -45deg);
 }

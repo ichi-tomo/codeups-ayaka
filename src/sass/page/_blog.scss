@@ -6,7 +6,8 @@
   @include mq(md) {
     padding-top: rem(100);
     padding-bottom: 0;
-    background: url(../images/common/blog-bg.jpeg) no-repeat top center / contain;
+    background: url(../images/common/blog-bg.jpeg) no-repeat top center /
+      contain;
     position: relative;
   }
 }
@@ -39,12 +40,13 @@
   gap: rem(39);
   @include mq(md) {
     margin-top: rem(80);
+    margin-right: 0;
+    margin-left: 0;
     flex-direction: row;
   }
 }
 
 .blog__card {
-
 }
 
 .blog__btn {

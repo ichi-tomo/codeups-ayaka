@@ -37,7 +37,6 @@
   gap: rem(40);
 }
 
-
 .nav__parent,
 .nav__child {
   font-size: rem(16);
@@ -60,7 +59,8 @@
   top: rem(9);
   left: rem(-22);
   transform: translateY(-50%);
-  background: url(../images/common/nav_icon.svg) no-repeat center center / contain;
+  background: url(../images/common/nav_icon.svg) no-repeat center center /
+    contain;
 }
 
 .nav__child {

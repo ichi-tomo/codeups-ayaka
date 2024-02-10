@@ -4,7 +4,7 @@
   @include mq(md) {
     margin-right: calc(50% - 50vw);
     overflow: hidden;
-    padding-top: rem(50);
+    padding-top: rem(13);
   }
 }
 
@@ -69,15 +69,15 @@
 .campaign-swiper__prev {
   @include mq(md) {
     position: absolute;
-    top: rem(50);
-    left: 70.833%;
+    top: 3.5%;
+    left: 75.833%;
   }
 }
 
 .campaign-swiper__next {
   @include mq(md) {
     position: absolute;
-    top: rem(50);
-    right: 6.5%;
+    top: 3.5%;
+    right: 3.5%;
   }
 }

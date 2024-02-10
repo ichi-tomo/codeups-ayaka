@@ -22,14 +22,14 @@
   gap: rem(10);
   @include mq(md) {
     flex-direction: row;
-    gap: rem(40);
+    gap: rem(32);
   }
 }
 
 .footer__logo {
   width: rem(120);
   @include mq(md) {
-    width: rem(200);
+    width: rem(208);
   }
 }
 
@@ -50,8 +50,8 @@
   padding: rem(2.25);
   @include mq(md) {
     width: rem(32);
-      padding: rem(3);
-    }
+    padding: rem(3);
+  }
 }
 
 .footer__sns-icon img {
@@ -61,7 +61,7 @@
 .footer__nav {
   margin-top: rem(40);
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: rem(12);
   }
 }
 
@@ -69,7 +69,7 @@
   margin-top: rem(33);
   text-align: center;
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(74);
   }
 }
 
@@ -78,4 +78,8 @@
   font-family: $english-main-font-family;
   line-height: 1.5;
   color: $white;
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: 1.28;
+  }
 }

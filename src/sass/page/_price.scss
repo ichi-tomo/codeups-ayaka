@@ -6,8 +6,14 @@
   padding-bottom: rem(77);
   position: relative;
   @include mq(md) {
-    padding-top: rem(100);
+    padding-top: rem(98);
     padding-bottom: rem(100);
+  }
+}
+
+.price__inner {
+  @include mq(md) {
+    padding-left: rem(38);
   }
 }
 
@@ -16,8 +22,8 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    bottom:  3.3125rem;
-    left: calc(50% - min(48.4vw, 38.875rem));
+    bottom: 3.9rem;
+    left: calc(50% - min(48.4vw, 38.775rem));
     width: rem(437);
   }
 }
@@ -50,7 +56,7 @@
   max-width: rem(746);
 }
 
-.price__img .is-color{
+.price__img .is-color {
   position: absolute;
   top: 0;
   right: 0;
@@ -70,6 +76,6 @@
 .price__btn {
   margin-top: rem(40);
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(77);
   }
 }

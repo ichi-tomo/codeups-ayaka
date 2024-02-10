@@ -4,7 +4,7 @@
   background: $white;
   @include mq(md) {
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    padding: rem(80) rem(50);
+    padding: rem(78) rem(39) rem(75) rem(50);
   }
 }
 
@@ -15,12 +15,13 @@
   text-align: center;
   @include mq(md) {
     flex-direction: row;
+    gap: rem(75);
   }
 }
 
 .contact-box__left {
   @include mq(md) {
-    width: 47.9%;
+    width: rem(456);
   }
 }
 
@@ -33,7 +34,6 @@
 
 .contact-box__logo {
   display: block;
-  border-bottom: rem(1) solid $main-bg-color;
 }
 
 .contact-box__logo img {
@@ -48,8 +48,11 @@
 
 .contact-box__access {
   @include mq(md) {
+    margin-top: rem(3);
+    padding-top: rem(8);
     display: flex;
-    gap: rem(21);
+    gap: rem(15);
+    border-top: rem(1) solid $main-bg-color;
   }
 }
 
@@ -66,6 +69,9 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1.7;
+  @include mq(md) {
+    text-align: left;
+  }
 }
 
 .contact-box__map {
@@ -89,4 +95,7 @@
 
 .contact-box__btn {
   margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(31);
+  }
 }

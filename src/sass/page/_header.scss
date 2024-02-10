@@ -5,8 +5,8 @@
   height: rem(80);
   background: rgba($black, 0.68);
   z-index: 1000;
-  position: fixed;  // 最後に戻す
-  top: 0;           // 最後に戻す
+  position: fixed; // 最後に戻す
+  top: 0; // 最後に戻す
   @include mq(md) {
     height: rem(90);
   }
@@ -17,9 +17,8 @@
   transition: 0.5s;
 }
 
-
 .header__inner {
-  height: inherit;    // 親要素の高さを継承
+  height: inherit; // 親要素の高さを継承
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +30,7 @@
     max-width: calc(rem(1360) + ($padding-pc * 2));
     padding-right: $padding-pc;
     padding-left: $padding-pc;
+    // margin-left: 0;
   }
 }
 
@@ -39,7 +39,9 @@
   width: rem(102);
   aspect-ratio: 102 / 38;
   @include mq(md) {
-    width: rem(133);
+    width: rem(140);
+    margin-top: rem(8);
+    margin-left: rem(-3);
   }
 }
 

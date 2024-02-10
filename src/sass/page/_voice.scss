@@ -4,7 +4,7 @@
   padding-top: rem(37);
   padding-bottom: rem(78);
   @include mq(md) {
-    padding-top: rem(140);
+    padding-top: rem(138);
     padding-bottom: rem(140);
     position: relative;
   }
@@ -16,7 +16,7 @@
     display: block;
     transform: scale(-1, 1);
     position: absolute;
-    top: rem(24);
+    top: rem(18);
     left: calc(50% - min(48.4vw, 38.875rem));
     width: rem(301);
   }
@@ -27,14 +27,13 @@
   @include mq(md) {
     display: block;
     position: absolute;
-    bottom:  4.3125rem;
-    right: calc(50% - min(48.4vw, 33.875rem));
+    bottom: 4.74rem;
+    right: calc(50% - min(48.4vw, 33.8rem));
     width: rem(71);
   }
 }
 
 .voice__inner {
-
 }
 
 .voice__cards {
@@ -43,6 +42,7 @@
   flex-direction: column;
   gap: rem(38);
   @include mq(md) {
+    margin-top: rem(30);
     flex-direction: row;
   }
 }

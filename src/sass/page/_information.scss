@@ -2,7 +2,7 @@
 
 .information {
   background-color: $sub-bg-color;
-  padding-top: rem(80);
+  padding-top: rem(79);
   padding-bottom: rem(78);
   @include mq(md) {
     padding-top: rem(100);
@@ -22,8 +22,4 @@
   @include mq(md) {
     margin-top: rem(40);
   }
-}
-
-.information__item {
-
 }

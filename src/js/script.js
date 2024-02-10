@@ -32,21 +32,37 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       loop: true,   // クルクル回ってる
       slidesPerView: 1.22,    // 1画面にいくつ表示させるか
       breakpoints: {
-        768: {
-          slidesPerView: 3.29,
+        400: {
+          slidesPerView: 1.4,
           spaceBetween: 30    // slider間の余白
         },
-        1024: {
-          slidesPerView: 3.49,
+        500: {
+          slidesPerView: 1.7,
+          spaceBetween: 30    // slider間の余白
+        },
+        600: {
+          slidesPerView: 2.0,
+          spaceBetween: 30    // slider間の余白
+        },
+        700: {
+          slidesPerView: 2.4,
+          spaceBetween: 30    // slider間の余白
+        },
+        768: {
+          slidesPerView: 2.89,
+          spaceBetween: 30    // slider間の余白
+        },
+        1280: {
+          slidesPerView: 3.47,
           spaceBetween: 35
         }
       },
       spaceBetween: 24,
       speed: 2000,
-      // autoplay: {
-      //   delay: 1000,
-      //   disableOnInteraction: false
-      // },
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+      },
       // Navigation arrows
       navigation: {
         prevEl: ".campaign-swiper__prev",

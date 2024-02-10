@@ -23,6 +23,9 @@
   margin-left: 18.5507246%;
   width: 81.4492754%;
   z-index: 1;
+  @include mq(md) {
+    margin-top: -49%;
+  }
 }
 
 .about-us-content__body {
@@ -31,13 +34,14 @@
   flex-direction: column;
   gap: rem(16);
   @include mq(md) {
+    margin-top: rem(16);
     flex-direction: row;
     gap: rem(40);
     // background-color: $black;
     max-width: rem(880);
     position: absolute;
     top: 27.967033%;
-    left: 18.5185185%;
+    left: 18.43%;
     z-index: 5;
   }
 }
@@ -78,8 +82,8 @@
 }
 
 .about-us-content__btn {
-  margin-top: rem(50);
+  margin-top: rem(26);
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(38);
   }
 }
