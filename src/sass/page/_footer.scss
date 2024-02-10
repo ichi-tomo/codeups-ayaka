@@ -5,7 +5,8 @@
   padding-top: rem(48);
   padding-bottom: rem(56);
   @include mq(md) {
-    padding: rem(80) 0;
+    padding-top: rem(85);
+    padding-bottom: rem(80);
   }
 }
 
@@ -41,7 +42,7 @@
   display: flex;
   gap: rem(16);
   @include mq(md) {
-    margin-top: rem(38);
+    margin-top: rem(36);
   }
 }
 

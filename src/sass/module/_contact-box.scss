@@ -4,14 +4,14 @@
   background: $white;
   @include mq(md) {
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    padding: rem(78) rem(39) rem(75) rem(50);
+    padding: rem(78) rem(39) rem(81) rem(50);
   }
 }
 
 .contact-box {
   display: flex;
   flex-direction: column;
-  gap: rem(35);
+  gap: rem(39);
   text-align: center;
   @include mq(md) {
     flex-direction: row;
@@ -57,7 +57,10 @@
 }
 
 .contact-box__address {
-  margin-top: rem(16);
+  margin-top: rem(18);
+  @include mq(md) {
+    margin-top: rem(16);
+  }
 }
 
 .contact-box__address + .contact-box__address {

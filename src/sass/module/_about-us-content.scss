@@ -37,7 +37,6 @@
     margin-top: rem(16);
     flex-direction: row;
     gap: rem(40);
-    // background-color: $black;
     max-width: rem(880);
     position: absolute;
     top: 27.967033%;
@@ -67,7 +66,7 @@
   @include mq(md) {
     color: $white;
     font-size: rem(80);
-    line-height: 1.25; /* 125% */
+    line-height: 1.25;
     flex-shrink: 1;
   }
 }

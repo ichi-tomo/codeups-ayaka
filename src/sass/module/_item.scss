@@ -15,6 +15,9 @@
   text-align: center;
   width: 100%;
   position: relative;
+  @include mq(md) {
+    max-width: rem(538);
+  }
 }
 
 .item__img .is-color {
@@ -30,9 +33,6 @@
 .item__img img {
   width: 100%;
   display: block;
-}
-
-.item__body {
 }
 
 .item__title {
@@ -56,6 +56,9 @@
   font-style: normal;
   font-weight: $regular;
   line-height: 1.5;
+  @include mq(md) {
+    letter-spacing: 0.003em;
+  }
 }
 
 .item__btn {

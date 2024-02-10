@@ -5,7 +5,7 @@
   padding-bottom: rem(78);
   @include mq(md) {
     padding-top: rem(138);
-    padding-bottom: rem(140);
+    padding-bottom: rem(138);
     position: relative;
   }
 }
@@ -33,9 +33,6 @@
   }
 }
 
-.voice__inner {
-}
-
 .voice__cards {
   margin-top: rem(44);
   display: flex;
@@ -45,9 +42,6 @@
     margin-top: rem(30);
     flex-direction: row;
   }
-}
-
-.voice__card {
 }
 
 .voice__btn {
